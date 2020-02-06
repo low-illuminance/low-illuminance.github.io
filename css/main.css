@@ -1,0 +1,11 @@
+.album {
+    /*margin-top: 130px;*/
+    max-width: 1080px;
+    width:80vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4.33%;
+    padding-right: 4.33%;
+    box-sizing: content-box;
+    align-self: center;
+  }
