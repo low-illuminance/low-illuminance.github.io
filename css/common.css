@@ -1278,7 +1278,7 @@ header {
 }
 .footer__copy ul li {
   display: inline-block;
-  width: 9px;
+  width: 19px;/*9px*/
   font-size: 0;
   line-height: 0;
 }

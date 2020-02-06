@@ -482,7 +482,7 @@ header {
   margin-top: 18px;
 }
 .footer__copy ul li {
-  width: 9px;
+  width: 19px;/*9px*/
 }
 .footer__copy ul li a {
   transition: none;
