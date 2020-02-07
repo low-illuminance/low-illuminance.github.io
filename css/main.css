@@ -39,20 +39,20 @@
 }
 
   #sec0{
-    background-image: url('./../img/shilin_before.jpg');
+    background-image: url(./../img/shilin_before.jpg);
   }
   
   #sec1{
-    background-image:url('./../img/shilin_after.jpg');
+    background-image:url(./../img/shilin_after.jpg);
   }
   #sec2{
-    background-image:url('./../img/shilin_before_1.jpg');
+    background-image:url(./../img/shilin_before_1.jpg);
   }
   #sec3{
-    background-image:url('./../img/shilin_after_1.jpg');
+    background-image:url(./../img/shilin_after_1.jpg);
   }
   #shilin_bg{
-    background-image:url('./../img/shilin_bg.jpg');
+    background-image:url(./../img/shilin_bg.jpg);
   }
 
   #white{
