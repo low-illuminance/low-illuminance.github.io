@@ -16,6 +16,7 @@
       background-attachment: fixed;
       background-position: center center;
       background-size: cover;
+      -webkit-background-size: cover;
       display: flex;
      /* Flex Box 設定內部元素置中	
       
