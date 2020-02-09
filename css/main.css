@@ -41,10 +41,20 @@
   #sec0{
     background-image: url(./../img/shilin_before.jpg);
   }
+
+  #sec0_m{
+    background-image: url(./../img/shilin_before_m.jpg);
+  }
+
   
   #sec1{
     background-image:url(./../img/shilin_after.jpg);
   }
+  #sec1_m{
+    background-image:url(./../img/shilin_after_m.jpg);
+  }
+
+
   #sec2{
     background-image:url(./../img/shilin_before_1.jpg);
   }
@@ -54,7 +64,9 @@
   #shilin_bg{
     background-image:url(./../img/shilin_bg.jpg);
   }
-
+  #shilin_bg_m{
+    background-image:url(./../img/shilin_bg_m.jpg);
+  }
   #white{
     color:white;
   }
