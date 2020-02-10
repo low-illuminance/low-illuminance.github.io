@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: aqua;
 }
 .v-section-70 {
   margin-top: 0px;
@@ -38,7 +39,7 @@
 }
 .v-section-cover{
   margin-top: -100vh;
-  width: 20%;
+  width: 50%;
   height: 100vh;
   background-image: url(./../img/shilin_after.jpg);
   background-repeat: no-repeat;
@@ -50,12 +51,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: width 2s;
-  border-right: 10px solid #FFF;
+  /*transition: width 2s;*/
+  border-right: 5px solid #FFF;
 }
-.v-section-cover:hover{
-  width: 100%;
-}
+
 @media screen and (max-width: 768px){
   .v-section {
     margin-top: 0px;

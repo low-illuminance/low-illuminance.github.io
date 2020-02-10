@@ -42,8 +42,65 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">-->
   <link rel='dns-prefetch' href='//s.w.org' />
-   
+  
+  <script>
+    function mousePosition(ev){ 
+        ev = ev || window.event; 
+        if(ev.pageX || ev.pageY){ 
+            return {x:ev.pageX, y:ev.pageY}; 
+        } 
+        return { 
+            x:ev.clientX + document.body.scrollLeft - document.body.clientLeft, 
+            y:ev.clientY + document.body.scrollTop - document.body.clientTop 
+        }; 
+    }
+    
+    $(document).ready(function(){
+      $(function () {
+        //鼠标在未被遮挡的位置：
+        $(".v-section").mousemove(function(e){
+            //获取鼠标位置函数
+            var mousePos = mousePosition(e);
+            var  xOffset = 0;
+            var  yOffset = 25;
+          
+            $(".v-section-cover").css("width",(    (mousePos.x + xOffset)/$(".v-section").width()   )*100 + "%");
+            console.log((mousePos.x)/$(".v-section").width());
+            
+                
+         });
+         //鼠标离开未被遮挡位置
+         $(".v-section").mouseout(function(){
+            // $("#tooltip").empty();
+            // $("#tooltip").css("display","none");
+            console.log("mouse left uncovered");
+         });
+            //////////////////////////////////////////////////////////////
+         //鼠标在被遮挡的位置：
+         $(".v-section-cover").mousemove(function(e){
+            
+            var mousePos = mousePosition(e);
+            var  xOffset = 0;
+            var  yOffset = 25;
+          
+            $(".v-section-cover").css("width",(    (mousePos.x + xOffset)/$(".v-section").width()   )*100 + "%");
+            console.log((mousePos.x)/$(".v-section").width());
+            
+                
+         });
+         //鼠标离开被遮挡位置
+         $(".v-section-cover").mouseout(function(){
+            // $("#tooltip").empty();
+            // $("#tooltip").css("display","none");
+            console.log("mouse left covered");
+         });
+     
+        });
 
+
+
+    });
+</script>
 
 </head>
 <body class="home blog lang-ja footer_mt">
@@ -67,7 +124,7 @@
         </nav><!-- .header__navi -->
 
                     <nav class="header__sns pc">
-                <ul class="u-clearfix">
+                <ul class="u-clearfix" >
                     <li><a href="https://500px.me/riino" target="_blank">500PX</a></li>
                 </ul>
             </nav><!-- .header__sns -->
