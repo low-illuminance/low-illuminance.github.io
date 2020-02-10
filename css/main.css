@@ -36,7 +36,26 @@
   background-attachment: fixed;
   display: flex;
 }
-
+.v-section-cover{
+  margin-top: -100vh;
+  width: 20%;
+  height: 100vh;
+  background-image: url(./../img/shilin_after.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% -1%;
+  background-size: 100% auto;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 2s;
+  border-right: 10px solid #FFF;
+}
+.v-section-cover:hover{
+  width: 100%;
+}
 @media screen and (max-width: 768px){
   .v-section {
     margin-top: 0px;
@@ -53,6 +72,24 @@
     justify-content: center;
     align-items: center;
   }
+  .v-section-cover{
+    margin-top: -100vh;
+    width: 10%;
+    height:100vh;
+    background-image: url(./../img/shilin_after.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% -1%;
+    background-size: auto 100%;
+    position: relative;
+    overflow: hidden;
+    background-attachment: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 1s;
+    border-right: 5px solid #FFF;
+  }
+ 
   .v-section-70 {
     margin-top: 0px;
     width: 100%;
@@ -74,9 +111,6 @@
   background-image: url(./../img/shilin_before_m.jpg);
 }
 
-#sec1 {
-  background-image: url(./../img/shilin_after.jpg);
-}
 #sec1_m {
   background-image: url(./../img/shilin_after_m.jpg);
 }
