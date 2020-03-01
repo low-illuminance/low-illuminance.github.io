@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<html lang="en">
+<!--
+{% include head.html %}-->
 <head>
     
     <meta charset="utf-8">
@@ -8,20 +11,6 @@
     <title>low illuminance</title>
         <!--JQuery-->
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    
-    <!-- Font Awesome Icons -->
-  
-   <!--bootstrap CDN
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   
-   -->
-
-  <!-- Google Fonts
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
-  -->
     
    <!--CSS inside-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -45,7 +34,10 @@
 
 </head>
 
-<body>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!--{% include nav.html %}-->
     <header><div class="header__inner u-clearfix">
         <nav class="header__navi pc">
             <ul class="u-clearfix">
@@ -65,10 +57,6 @@
             </ul>
         </nav><!-- .header__navi -->
 
-
-
-
-       
                     <nav class="header__sns pc">
                 <ul class="u-clearfix">
                     <li><a href="https://500px.me/riino" target="_blank">500PX</a></li>
@@ -93,44 +81,10 @@
         </div><!-- .menuBtn -->
     </div></header>
 
+    {{ content }}
 
-
-
-
-    <section style="height: 200px;"></section>
-    <section class="home-message js-fadein">
-        <div class="home-message__ttl">
-            <h2>CONTACT</h2>
-            
-            
-        </div><!-- .home-message__ttl -->
-        <div class="home-message__txt">
-            <div class="container">
-                <div class="row">
-                <div class="col-sm">
-                    <p class="u-txt__label">
-                       low illu. Gmail: sorphwer@gmail.com
-                    </p>
-                    <p class="u-txt__label">
-                        low illu. instagram: @riino_vibe
-                     </p>
-                    
-                    
-                </div>
-               
-                <div class="col-sm">
-                    <p class="home-message__txt--main u-m">
-                        
-                    </p>
-                </div>
-                </div>
-            </div>
-            
-            <!--<p class="u-txt__link"><a href="">READ MORE</a></p>-->
-        </div><!-- .home-message__txt -->
-    </section><!-- .home-message -->
-
-	<footer class="js-fadein">
+    <!--{% include footer.html %}-->
+    <footer class="js-fadein">
 		<div class="footer__link">
 			<p><a href="">Notification</a><span>/</span><a href="">Privacy Policy</a></p>
 		</div><!-- .footer__link -->
@@ -171,6 +125,7 @@
 			</div><!-- .menu_closeBtn -->
 		</div><!-- .menu__inner -->
 	</div><!-- .menu -->
+
 
 
 </body>
