@@ -58,6 +58,8 @@ navigation:
   layout: home
 - text: Albums
   url: /album.html
+- text: Portrait
+  url: /portrait.html
   #layout: forarchive
 - text: Shilin-fliter
   url: /shilin.html
