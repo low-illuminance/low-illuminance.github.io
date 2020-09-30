@@ -10,8 +10,10 @@ body {
   margin: 0;
   padding: 0;
   background: #fff;
-  font-family: Helvetica Neue, Helvetica, Arial, "Hiragino Kaku Gothic ProN",
-    "游ゴシック", YuGothic, Meiryo, sans-serif;
+  /* font-family: Helvetica Neue, Helvetica, Arial, "Hiragino Kaku Gothic ProN",
+    "游ゴシック", YuGothic, Meiryo, sans-serif; */
+  font-family: Segoe UI,SegoeUI,Helvetica Neue, Helvetica, Arial, "PingFang SC","Hiragino Kaku Gothic ProN",
+    "游ゴシック", YuGothic, Meiryo, sans-serif !important;
   line-height: 100%;
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
@@ -1467,7 +1469,7 @@ header {
   margin-top: 118px;
   position: relative;
 }
-.home-artist:after {
+/* .home-artist:after {
   content: "";
   position: absolute;
   bottom: -160px;
@@ -1476,7 +1478,7 @@ header {
   height: 265px;
   background: #fff;
   z-index: 1;
-}
+} */
 @media screen and (max-width: 1180px) {
   .home-artist:after {
     width: 4.16%;

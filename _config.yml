@@ -56,13 +56,19 @@ navigation:
 - text: Home
   url: /index.html
   layout: home
-- text: Albums
+- text: Photo
   url: /album.html
-- text: Portrait
-  url: /portrait.html
+# - text: Portrait
+#   url: /portrait.html
+# - text: Minecraft
+#   url: /minecraft.html
+# - text: Render
+#   url: /render.html
   #layout: forarchive
 - text: Shilin-fliter
   url: /shilin.html
+- text: Chongqing-fliter
+  url: /chongqing.html
   #layout: default
 - text: Contact
   url: /contact.html
