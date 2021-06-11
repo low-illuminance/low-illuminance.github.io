@@ -56,10 +56,10 @@ navigation:
 - text: Home
   url: /index.html
   layout: home
-- text: Photo
+- text: Landscape
   url: /album.html
-# - text: Portrait
-#   url: /portrait.html
+- text: Portrait
+  url: /portrait.html
 # - text: Minecraft
 #   url: /minecraft.html
 # - text: Render
