@@ -1,77 +1,64 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: low illuminance[Archive]
+#This config file is specificated for theme demo page : https://riino.site/jekyll-theme-panda/
+#Please do not use this config directly if you desire to use this repo as your blog.
+title: low illuminance
+author: riino
+remote_theme: sorphwer/jekyll-theme-panda
 email: riino@gmail.com
-description: >- # this means to ignore newlines until "baseurl:",you can add <description>{{ post.content | xml_escape }}</description> in feed.xml.
-  A tech blog site of Riisite3.0, owned by Riino.
-
+SEOTitle: low illuminance
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://li.riino.site" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: sorphwer
-github_username:  sorphwer
+twitter_username: twitter_name
+github_username: github_name 
 github_url: https://github.com/sorphwer
-repo_url: https://github.com/sorphwer/sorphwer.github.io
+repo_url: https://github.com/sorphwer/jekyll-theme-panda
+theme_version: 0.1.1
+permalink: /:year-:month-:day-:title:output_ext
 # Build settings
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-theme: minima
 plugins:
-  - jekyll-feed
-  - jekyll-paginate
- # - jekyll-sitemap
+- jekyll-remote-theme
+- jekyll-paginate
 paginate: 10
 
 toc:
   min_level: 1 # default: 1
   max_level: 4 # default: 6
+sass:
+    sass_dir: _sass
+    style: compressed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-# this goes inside _config.yml. Change as required
 navigation:
 - text: Home
-  url: /index.html
-  layout: home
-- text: Landscape
-  url: /album.html
-- text: Portrait
-  url: /portrait.html
-# - text: Minecraft
-#   url: /minecraft.html
-# - text: Render
-#   url: /render.html
-  #layout: forarchive
-- text: Shilin-fliter
-  url: /shilin.html
-- text: Chongqing-fliter
-  url: /chongqing.html
-  #layout: default
-- text: Contact
-  url: /contact.html
+  url: ./index.html
+- text: Albums
+  url: ./albums
+  layout: albumlist
+- text: Presets
+  url: ./presets
+  layout: presetlist
+# - text: Visios
+#   url: ./visios
+- text: contact
+  url: ./contact
+  layout: default
 
-#- text: test
-  #layout: default
+dropdown_header: low illu. #will only exist if dropdown array below has item(s)
+dropdown:
+- text: blog
+  url: riino.site
+# - text: drop2.
+#   url: example.com
+
+footer_text:
+- low illuminance by Riino
+- All Rights Reserved.
+
+hoster_logo: /assets/img/logo_Nest.png
+hoster_logo_link: https://github.com/sorphwer
+hoster_logo_alt: Github
+hoster_text:
+- Nest of Etamine - 10th Anniversary
+- 2012-2022
