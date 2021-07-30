@@ -5,7 +5,7 @@ cover_before: /img/presets/shilin/shilin_before.jpg
 cover_after: /img/presets/shilin/shilin_after.jpg
 hidden: true
 description: ['Shilin filter is the first open LR/PS preset of Riino Lin. The main spirit comes from a experience editing photo took in Shilin,Taipei. The thought is to enhance the cool color and addding orrange in red,and cancel green.','士林フィルターは、リイノの最初のオープンLR / PSプリセットである。 台北の士林夜市で撮影した写真を編集した経験から来ています。 冷色を修正し、赤やオレンジ色の追加と強化、緑を弱くなることです。']
-download_url: google.com
+download_url: https://li.riino.site/download/Riino_BlackGold.zip
 derivation: ['The origin preset is for night photograph.But it suprisingly works will in other cases.','元のプリセットは夜の写真用ですが、他の場合にも驚くほどうまくいきます。']
 derivation_img : ./img/presets/shilin/shilin_after_1.jpg
 samples:
@@ -13,4 +13,12 @@ samples:
    subtitle: '冷たい雰囲気を与える'
    img_url: '/img/presets/shilin/shilin_1.jpg'
    img_text: '@ Twatutia, Taipei, 2019'
+ - title: 'More Sharpness'
+   subtitle: 'シャープネスを追加'
+   img_url: '/img/presets/shilin/shilin_2.jpg'
+   img_text: '@ Twatutia, Taipei, 2019'
+ - title: 'Portrait case'
+   subtitle: '肖像写真の場合も可能'
+   img_url: '/img/presets/shilin/shilin_3.jpg'
+   img_text: '@"Wangyou Valley",Keelung, 2019'
 ---
