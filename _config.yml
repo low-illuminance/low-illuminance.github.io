@@ -47,8 +47,11 @@ navigation:
 
 dropdown_header: low illu. #will only exist if dropdown array below has item(s)
 dropdown:
-- text: blog
-  url: riino.site
+- text: BLOG
+  url: https://riino.site
+- text: Theme
+  url : https://riino.site/jekyll-theme-panda/
+
 # - text: drop2.
 #   url: example.com
 
